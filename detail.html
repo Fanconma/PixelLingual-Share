@@ -9,16 +9,18 @@
     <title id="pagetitle"></title>
 </head>
 <body>
+    <!-- Beginning of the header -->
     <header>
         <a href="/" id="back-to-home">
-        <img src="/pl-content/images/logo.png" id="logo"></img>
+        <img src="https://s2.loli.net/2023/09/05/5ALsaj9v1WKdmGP.png" id="logo"></img>
         </a>
         <nav>
             <a href="/">首页</a> |
-            <!-- <a href="/about">关于本站</a> |
-            <a href="/notice">特别注意</a> -->
+            <a href="https://github.com/Fanconma/PixelLingual-Share">Github</a> |
+            <!-- <a href="/notice">特别注意</a> -->
         </nav>
-    </header>
+    </header>        
+    <!-- End of the header -->
     
     <div class="container mt-4">
         <div id="detail-app" class="row">
@@ -34,16 +36,60 @@
                 <p class="fas fa-tools"><strong> 地图工作室:</strong> <span id="studio"></span></p>
                 <div id="description"></div>
                 <br>
-                <div id="badge-container">
-                    <img id="badge" class="badge-image" src="" alt="Official Badge" width="32" height="32">
-                    <span id="badge-title"></span>
+                <div id="official-badge-container" class="badge-container">
+                    <img src="/pl-content/images/official-badge.png" alt="Official Badge" width="64" height="64">
+                    <span class="badge-description">官方项目</span>
                 </div>
+                
+                <div id="best-quality-badge-container" class="badge-container">
+                    <img src="/pl-content/images/official-badge.png" alt="Best Quality Badge" width="64" height="64">
+                    <span class="badge-description">最佳翻译质量</span>
+                </div>
+                
+                <div id="popular-badge-container" class="badge-container">
+                    <img src="popular-badge.png" alt="Popular Badge" width="64" height="64">
+                    <span class="badge-description">热门</span>
+                </div>
+                
+                <div id="horror-check-badge-container" class="badge-container">
+                    <img src="horror-check-badge.png" alt="Horror Check Badge" width="64" height="64">
+                    <span class="badge-description">恐怖检查</span>
+                </div>
+                
                 <br>
                 <a href="#" class="btn btn-primary btn-lg" id="url">立即下载</a>
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/Fanconma/PixelLingual-Share">
+              <ion-icon name="logo-github"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://x.com/@fanconma">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <!-- <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li> -->
+        </ul>
+        <!-- <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+    
+        </ul> -->
+        <p>Site Version: v0.1.0</p>
+        <p>&copy;2023 PixelLingual | All Rights Reserved</p>
+      </footer>
     <script src="js/main.js"></script>
     <script src="js/detail.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

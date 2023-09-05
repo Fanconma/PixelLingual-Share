@@ -12,7 +12,7 @@
         "tags": ["Disney", "迪士尼"],
         "name-eng": "WDW Magic Kingdom",
         "official": true,
-        "best-quality": true
+        "best_quality": true
     },
     {
         "id": 1, 

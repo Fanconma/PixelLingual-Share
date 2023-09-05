@@ -1,10 +1,4 @@
 const selectedItem = JSON.parse(localStorage.getItem('selectedItem'));
-
-// 获取徽章容器和徽章标题元素
-const badgeContainer = document.getElementById('badge-container');
-const badge = document.getElementById('badge');
-const badgeTitle = document.getElementById('badge-title');
-
 // 确保数据已成功读取
 console.log(selectedItem);
 
@@ -55,50 +49,105 @@ if (selectedItem) {
     }
     
 }
+// 获取JSON数据中的徽章属性值
+const officialBadge = selectedItem.official;
+const bestQualityBadge = selectedItem.best_quality;
+const popularBadge = selectedItem.popular;
+const horrorCheckBadge = selectedItem.horror_check;
 
-    // 根据 official 属性显示/隐藏徽章和设置徽章标题
-    if (selectedItem.official) {
-        badge.src = '/pl-content/images/official-badge.png'; // 设置徽章图片的路径
-        badgeTitle.textContent = '作品是官方DLC！'; // 设置徽章标题
-    } else {
-        badge.style.display = 'none'; // 非官方项目时隐藏徽章
-        badgeTitle.style.display = 'none'; // 隐藏徽章标题
-    }
+// 获取徽章容器元素
+const officialBadgeContainer = document.getElementById('official-badge-container');
+const bestQualityBadgeContainer = document.getElementById('best-quality-badge-container');
+const popularBadgeContainer = document.getElementById('popular-badge-container');
+const horrorCheckBadgeContainer = document.getElementById('horror-check-badge-container');
 
-    // 添加鼠标悬停事件处理程序，显示徽章标题
-    badgeContainer.addEventListener('mouseenter', () => {
-        badgeTitle.style.display = 'inline'; // 显示徽章标题
-    });
+// 根据属性值动态显示/隐藏徽章
+if (officialBadge) {
+    officialBadgeContainer.style.display = 'inline-block';
+}
+else{
+    officialBadgeContainer.style.display = 'none';
+}
 
-    // 添加鼠标移出事件处理程序，隐藏徽章标题
-    badgeContainer.addEventListener('mouseleave', () => {
-        badgeTitle.style.display = 'none'; // 隐藏徽章标题
-    });
-    
+if (bestQualityBadge) {
+    bestQualityBadgeContainer.style.display = 'inline-block';
+}
+else {
+    bestQualityBadgeContainer.style.display = 'none';
+}
+
+if (popularBadge) {
+    popularBadgeContainer.style.display = 'inline-block';
+}
+else{
+    popularBadgeContainer.style.display = 'none';
+}
+
+if (horrorCheckBadge) {
+    horrorCheckBadgeContainer.style.display = 'inline-block';
+}
+else{
+    horrorCheckBadgeContainer.style.display = 'none';
+}
 //认证徽章转头特效
 // 获取徽章图像元素
 // 添加鼠标移动事件处理程序
-badge.addEventListener('mousemove', (event) => {
+officialBadgeContainer.addEventListener('mousemove', (event) => {
     // 计算鼠标在徽章上的位置
-    const mouseX = event.clientX - badge.getBoundingClientRect().left;
-    const mouseY = event.clientY - badge.getBoundingClientRect().top;
+    const mouseX = event.clientX - officialBadgeContainer.getBoundingClientRect().left;
+    const mouseY = event.clientY - officialBadgeContainer.getBoundingClientRect().top;
 
     // 计算徽章扭头的角度（根据鼠标位置）
-    const angleX = (mouseX / badge.clientWidth - 0.5) * 100; // 调整扭头的幅度
-    const angleY = (mouseY / badge.clientHeight - 0.5) * 100;
+    const angleX = (mouseX / officialBadgeContainer.clientWidth - 0.5) * 80; // 调整扭头的幅度
+    const angleY = (mouseY / officialBadgeContainer.clientHeight - 0.5) * 80;
 
     // 应用 CSS 变换以实现徽章扭头效果
-    badge.style.transform = `perspective(1000px) rotateX(${angleY}deg) rotateY(${angleX}deg)`;
+    officialBadgeContainer.style.transform = `perspective(1000px) rotateX(${angleY}deg) rotateY(${angleX}deg)`;
 });
 
 // 添加鼠标移出事件处理程序，重置徽章变换
-badge.addEventListener('mouseleave', () => {
-    badge.style.transform = 'none'; // 重置徽章变换
+officialBadgeContainer.addEventListener('mouseleave', () => {
+    officialBadgeContainer.style.transform = 'none'; // 重置徽章变换
 });
 
-// 根据 official 属性显示/隐藏徽章
-if (selectedItem.official) {
-    badge.src = '/pl-content/images/official-badge.png'; // 设置徽章图片的路径
-} else {
-    badge.style.display = 'none'; // 非官方项目时隐藏徽章
-}
+//认证徽章转头特效
+// 获取徽章图像元素
+// 添加鼠标移动事件处理程序
+bestQualityBadgeContainer.addEventListener('mousemove', (event) => {
+    // 计算鼠标在徽章上的位置
+    const mouseX = event.clientX - bestQualityBadgeContainer.getBoundingClientRect().left;
+    const mouseY = event.clientY - bestQualityBadgeContainer.getBoundingClientRect().top;
+
+    // 计算徽章扭头的角度（根据鼠标位置）
+    const angleX = (mouseX / bestQualityBadgeContainer.clientWidth - 0.5) * 80; // 调整扭头的幅度
+    const angleY = (mouseY / bestQualityBadgeContainer.clientHeight - 0.5) * 80;
+
+    // 应用 CSS 变换以实现徽章扭头效果
+    bestQualityBadgeContainer.style.transform = `perspective(1000px) rotateX(${angleY}deg) rotateY(${angleX}deg)`;
+});
+
+// 添加鼠标移出事件处理程序，重置徽章变换
+bestQualityBadgeContainer.addEventListener('mouseleave', () => {
+    bestQualityBadgeContainer.style.transform = 'none'; // 重置徽章变换
+});
+
+//认证徽章转头特效
+// 获取徽章图像元素
+// 添加鼠标移动事件处理程序
+popularBadgeContainer.addEventListener('mousemove', (event) => {
+    // 计算鼠标在徽章上的位置
+    const mouseX = event.clientX - popularBadgeContainer.getBoundingClientRect().left;
+    const mouseY = event.clientY - popularBadgeContainer.getBoundingClientRect().top;
+
+    // 计算徽章扭头的角度（根据鼠标位置）
+    const angleX = (mouseX / popularBadgeContainer.clientWidth - 0.5) * 80; // 调整扭头的幅度
+    const angleY = (mouseY / popularBadgeContainer.clientHeight - 0.5) * 80;
+
+    // 应用 CSS 变换以实现徽章扭头效果
+    popularBadgeContainer.style.transform = `perspective(1000px) rotateX(${angleY}deg) rotateY(${angleX}deg)`;
+});
+
+// 添加鼠标移出事件处理程序，重置徽章变换
+popularBadgeContainer.addEventListener('mouseleave', () => {
+    popularBadgeContainer.style.transform = 'none'; // 重置徽章变换
+});
