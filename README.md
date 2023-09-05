@@ -7,7 +7,7 @@ PixelLingual Share 是一个**共享Minecraft中文翻译的平台**(Experimenta
 
 # 😎如何加入？| HOW TO TAKE PART IN?
 加入的方法目前比较简单，你可以通过**在本项目内提交一个 Issue** 使用模板地即可！管理员会在审核后通知你并将你加入 PixelLingual Share 平台!
-
+注：详情请查看Wiki。
 > 特注：
 > 目前 Share 正在测试中，仅能上传您所翻译的 **Minecraft 基岩版市场**内容！其他内容将在未来可用。
 
