@@ -25,9 +25,7 @@
         "studio": "Spark Universe",
         "url": "https://pan.baidu.com/s/1cWpAHuxMOL9BKg2sB0Gv7Q?pwd=tef6",
         "tags": ["1.20", "洞穴与山崖"],
-        "name-eng": "Caves & Cliffs Explorers",
-        "official": false,
-        "best-quality": false
+        "name-eng": "Caves & Cliffs Explorers"
     },
     {
         "id": 2, 
@@ -40,7 +38,18 @@
         "studio": "Oreville Studios",
         "url": "https://pan.baidu.com/s/1eNTyCLV4_tk9SRM7e_TxJQ?pwd=2ux8",
         "name-eng": "Caves & Cliffs Explorers",
-        "official": true,
-        "best-quality": false
+        "official": true
+    },
+    {
+        "id": 3, 
+        "title": "海滨故事", 
+        "image": "https://xforgeassets001.xboxlive.com/pf-title-b63a0803d3653643-20ca2/ee60e88b-9a02-4ee2-8b0f-b5d4772afbf4/SeasideStory_Thumbnail_0.jpg", 
+        "description": "实践您自己的和平海洋冒险！钓鱼，在全新的海洋生物群系中探索令人惊奇的生物。\n\n自定义您的船只，升级岛屿，用自己捕捉的鱼填满水族馆。这里到处都是可供探索的秘密，能交朋友，并且可以清理生态系统，是时候开始自己的海滨故事了！", 
+        "rating": "4.5", 
+        "minecoin": "0",
+        "author": "Fanconma",
+        "studio": "Gamemode One",
+        "url": "https://pan.baidu.com/s/101-m-4rX1jlw6WX0dgludg?pwd=cyru",
+        "name-eng": "Seaside Story"
     }
 ]
