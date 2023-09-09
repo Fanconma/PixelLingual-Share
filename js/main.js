@@ -2,17 +2,19 @@ new Vue({
     el: '#Pl-pack',
     data: {
         items: [],
-        errorMessage: '',
-        selectedItem: null,
         searchQuery: '',
         loading: true,
         error: null,
     },
-
     computed: {
         filteredItems() {
-            // 使用搜索条件过滤数据
-            return this.items.filter(item => item.title.toLowerCase().includes(this.searchQuery.toLowerCase()));
+            const query = this.searchQuery.toLowerCase();
+            return this.items.filter(item =>
+                item.title.toLowerCase().includes(query) ||
+                item.name_eng.toLowerCase().includes(query) ||
+                item.author.toLowerCase().includes(query) ||
+                item.studio.toLowerCase().includes(query)
+            );
         }
     },
     created() {
@@ -22,37 +24,18 @@ new Vue({
                 this.loading = false;
             })
             .catch(error => {
+                console.error('加载数据出错:', error);
                 this.error = true;
-                this.errorMessage = '加载数据出错: ' + error.message;
+                this.loading = false;
             });
     },
-    // methods: {
-    //     showDetails: function(item) {
-    //         this.selectedItem = item;
-    //     }
     methods: {
         showDetails(item) {
-          // 将选中项目的数据转换为JSON字符串并存储在localStorage中
-          localStorage.setItem('selectedItem', JSON.stringify(item));
-      
-          // 打开新页面
-          window.open('detail.html', '_blank');
+            // 将选中项目的数据转换为JSON字符串并存储在localStorage中
+            localStorage.setItem('selectedItem', JSON.stringify(item));
+        
+            // 打开新页面
+            window.open('detail.html', '_blank');
         }
-      }
+    }
 });
-
-// 评分展示
-function ratingShow(ratingValue){
-    if (ratingValue<=1)
-    return "⭐";
-    if (ratingValue>1 && ratingValue<=2)
-    return "⭐⭐";
-    if (ratingValue>2 && ratingValue<=3)
-    return "⭐⭐⭐";
-    if (ratingValue>3 && ratingValue<=4)
-    return "⭐⭐⭐⭐";
-    if (ratingValue>4 && ratingValue<=5)
-    return "⭐⭐⭐⭐⭐";
-    else
-    return ;
-}

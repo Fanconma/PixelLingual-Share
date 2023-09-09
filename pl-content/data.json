@@ -10,13 +10,13 @@
         "studio": "Everbloom Games",
         "url": "https://pan.baidu.com/s/1q_znLj-QeIkj85Ai_sGDug?pwd=qkbb",
         "tags": ["Disney", "迪士尼"],
-        "name-eng": "WDW Magic Kingdom",
+        "name_eng": "WDW Magic Kingdom",
         "official": true,
         "best_quality": true
     },
     {
         "id": 1, 
-        "title": "200个生物", 
+        "title": "洞穴与山崖探索者", 
         "image": "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/46f4bb93-3080-4bc7-888e-652459ac4331/Caves__Cliffs_Explorers_Thumbnail_0.jpg", 
         "description": "《我的世界》市场的创作者 Spark Universe 为您奉上洞穴及悬崖探索者地图。通过有趣的任务和轻松的游戏来重建并发展一个破败的村庄，从而了解这次更新的内容！", 
         "rating": "4.5", 
@@ -25,7 +25,7 @@
         "studio": "Spark Universe",
         "url": "https://pan.baidu.com/s/1cWpAHuxMOL9BKg2sB0Gv7Q?pwd=tef6",
         "tags": ["1.20", "洞穴与山崖"],
-        "name-eng": "Caves & Cliffs Explorers"
+        "name_eng": "Caves & Cliffs Explorers"
     },
     {
         "id": 2, 
@@ -37,7 +37,7 @@
         "author": "Fanconma",
         "studio": "Oreville Studios",
         "url": "https://pan.baidu.com/s/1eNTyCLV4_tk9SRM7e_TxJQ?pwd=2ux8",
-        "name-eng": "Caves & Cliffs Explorers",
+        "name_eng": "Angry Bird",
         "official": true
     },
     {
@@ -50,6 +50,6 @@
         "author": "Fanconma",
         "studio": "Gamemode One",
         "url": "https://pan.baidu.com/s/101-m-4rX1jlw6WX0dgludg?pwd=cyru",
-        "name-eng": "Seaside Story"
+        "name_eng": "Seaside Story"
     }
 ]
