@@ -39,3 +39,20 @@ new Vue({
         }
     }
 });
+
+// 动态加载页眉和页脚
+const headerContainer = document.getElementById('header-container');
+const footerContainer = document.getElementById('footer-container');
+
+// 使用AJAX或其他方式加载外部HTML文件
+fetch('/pl-content/content/header.html')
+    .then(response => response.text())
+    .then(data => {
+        headerContainer.innerHTML = data;
+    });
+
+fetch('/pl-content/content/footer.html')
+    .then(response => response.text())
+    .then(data => {
+        footerContainer.innerHTML = data;
+    });

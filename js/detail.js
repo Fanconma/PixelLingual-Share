@@ -1,5 +1,5 @@
 const selectedItem = JSON.parse(localStorage.getItem('selectedItem'));
-
+    
 // 显示数据
 if (selectedItem) {
     document.getElementById('pagetitle').textContent = selectedItem.title + '的汉化包 | 像素语匠分享 - PixelLingual Share';

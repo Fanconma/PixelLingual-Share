@@ -1,178 +1,209 @@
-body, .container{
-  background-color: rgb(49, 49, 49);
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+body, .container {
+	background-color: rgb(49, 49, 49);
+	flex: 1;
+	display: flex;
+	flex-direction: column;
 }
-h1,h2,h5,p{
-  color:rgb(233, 227, 227);
+
+h1,h2,h5,p {
+	color: rgb(233, 227, 227);
 }
+
 .clickable-image {
-  cursor: pointer; /* 更改鼠标光标为手型 */
-  transition: transform 0.3s; /* 添加平滑过渡效果 */
-  border-radius: 8px; /* 添加圆角边框 */
+	cursor: pointer;
+ /* 更改鼠标光标为手型 */
+	transition: transform 0.3s;
+ /* 添加平滑过渡效果 */
+	border-radius: 8px;
+ /* 添加圆角边框 */
 }
 
 .clickable-image:hover {
-  transform: scale(1.1); /* 悬浮时放大图片 */
-  box-shadow: 0 0 10px 0 rgba(231, 231, 231, 0.5); /* 添加阴影 */
-  border-radius: 8px; /* 添加圆角边框 */
+	transform: scale(1.1);
+ /* 悬浮时放大图片 */
+	box-shadow: 0 0 10px 0 rgba(231, 231, 231, 0.5);
+ /* 添加阴影 */
+	border-radius: 8px;
+ /* 添加圆角边框 */
 }
-#cover{
-  max-width: 500px;
-  max-height: auto;
+
+#cover {
+	max-width: 500px;
+	max-height: auto;
 }
 
 .card {
-  background-color: #282727;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+	background-color: #282727;
+	border-radius: 10px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+	transform: scale(1.05);
+	box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
 }
-/* 示例：按钮样式 */
+
 .btn-primary {
-  background-color: #007bff;
-  color: #fff;
-  transition: background-color 0.3s ease-in-out;
+	background-color: #007bff;
+	color: #fff;
+	transition: background-color 0.3s ease-in-out;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+	background-color: #0056b3;
 }
 
 /* 修改 header 样式 */
 header {
-  background-color: #262626; /* 背景颜色 */
-  color: #fff; /* 文本颜色 */
-  padding: 10px; /* 内边距 */
-  display: flex; /* 使用弹性布局 */
-  justify-content: space-between; /* 左右对齐 */
-  align-items: center; /* 垂直居中对齐 */
+	background-color: #262626;
+ /* 背景颜色 */
+	color: #fff;
+ /* 文本颜色 */
+	padding: 10px;
+ /* 内边距 */
+	display: flex;
+ /* 使用弹性布局 */
+	justify-content: space-between;
+ /* 左右对齐 */
+	align-items: center;
+ /* 垂直居中对齐 */
 }
 
 /* 修改标志样式 */
 #logo {
-  max-width: 300px; /* 调整标志的最大宽度 */
-  max-height: auto;
+	max-width: 300px;
+ /* 调整标志的最大宽度 */
+	max-height: auto;
 }
 
 /* 修改菜单按钮样式 */
 .menu-button {
-  color: #fff; /* 按钮颜色 */
-  text-decoration: none; /* 去掉链接下划线 */
-  margin-left: 20px; /* 左侧边距 */
-  font-size: 16px; /* 调整字体大小 */
-  transition: color 0.3s; /* 添加颜色变化的过渡效果 */
-
+	color: #fff;
+ /* 按钮颜色 */
+	text-decoration: none;
+ /* 去掉链接下划线 */
+	margin-left: 20px;
+ /* 左侧边距 */
+	font-size: 16px;
+ /* 调整字体大小 */
+	transition: color 0.3s;
+ /* 添加颜色变化的过渡效果 */
   /* 添加悬停效果 */
-  &:hover {
-      color: #007bff; /* 悬停时的颜色 */
-  }
+	&: hover {
+      color: #007bff;
+ /* 悬停时的颜色 */
+}
 }
 
 #rating {
-  color: yellow;
+	color: yellow;
 }
 
 #description {
-  color:white;
-  white-space: pre-line;
+	color: white;
+	white-space: pre-line;
 }
 
 .footer {
-position: relative;
-width: 100%;
-background: #252525;
-min-height: 100px;
-padding: 20px 50px;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-
+	position: relative;
+	width: 100%;
+	background: #252525;
+	min-height: 100px;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .social-icon,
 .menu {
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 10px 0;
-flex-wrap: wrap;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+	flex-wrap: wrap;
 }
 
 .social-icon__item,
 .menu__item {
-list-style: none;
+	list-style: none;
 }
 
 .social-icon__link {
-font-size: 2rem;
-color: #fff;
-margin: 0 10px;
-display: inline-block;
-transition: 0.5s;
+	font-size: 2rem;
+	color: #fff;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
 }
+
 .social-icon__link:hover {
-transform: translateY(-10px);
+	transform: translateY(-10px);
 }
 
 .menu__link {
-font-size: 1.2rem;
-color: #fff;
-margin: 0 10px;
-display: inline-block;
-transition: 0.5s;
-text-decoration: none;
-opacity: 0.75;
-font-weight: 300;
+	font-size: 1.2rem;
+	color: #fff;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
+	text-decoration: none;
+	opacity: 0.75;
+	font-weight: 300;
 }
 
 .menu__link:hover {
-opacity: 1;
+	opacity: 1;
 }
 
 .footer p {
-color: #fff;
-margin: 15px 0 10px 0;
-font-size: 1rem;
-font-weight: 300;
+	color: #fff;
+	margin: 15px 0 10px 0;
+	font-size: 1rem;
+	font-weight: 300;
 }
 
 #badge-title {
-display: none;
-color: lightcyan;
+	display: none;
+	color: lightcyan;
 }
 /* 容器样式 */
 .badge-container {
-display: inline-block; /* 并排显示容器 */
-margin-right: 20px; /* 可以调整容器之间的间距 */
-text-align: center; /* 文字居中对齐 */
-cursor: pointer;
-transition: transform 0.3s, filter 0.3s;
+	display: inline-block;
+ /* 并排显示容器 */
+	margin-right: 20px;
+ /* 可以调整容器之间的间距 */
+	text-align: center;
+ /* 文字居中对齐 */
+	cursor: pointer;
+	transition: transform 0.3s, filter 0.3s;
 }
 
 /* 徽章图像样式 */
 .badge-container img {
-width: 64px;
-height: 64px;
-border-radius: 8px;
+	width: 64px;
+	height: 64px;
+	border-radius: 8px;
 }
 
 /* 描述文字样式 */
 .badge-description {
-display: none; /* 默认隐藏描述文字 */
-margin-top: 5px; /* 可以调整描述文字与徽章的距离 */
-color: lightcyan;
+	display: none;
+ /* 默认隐藏描述文字 */
+	margin-top: 5px;
+ /* 可以调整描述文字与徽章的距离 */
+	color: lightcyan;
 }
 
 /* 悬停时显示描述文字 */
 .badge-container:hover .badge-description {
-display: block; /* 悬停时显示描述文字 */
+	display: block;
+ /* 悬停时显示描述文字 */
+}
+
+#vernum {
+  color:white;
 }
