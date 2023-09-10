@@ -10,6 +10,7 @@ if (selectedItem) {
     document.getElementById('cover').src = selectedItem.image;
     document.getElementById('studio').textContent = selectedItem.studio;
     document.getElementById('url').href = selectedItem.url;
+    document.getElementById('minecoins').textContent = selectedItem.minecoin;
 
     // 星星评分的展示
     const starsContainer = document.getElementById('rating');
@@ -65,8 +66,8 @@ function addBadgeHoverEffect(badgeContainer) {
     badgeContainer.addEventListener('mousemove', (event) => {
         const mouseX = event.clientX - badgeContainer.getBoundingClientRect().left;
         const mouseY = event.clientY - badgeContainer.getBoundingClientRect().top;
-        const angleX = (mouseX / badgeContainer.clientWidth - 0.5) * 80;
-        const angleY = (mouseY / badgeContainer.clientHeight - 0.5) * 80;
+        const angleX = (mouseX / badgeContainer.clientWidth - 0.5) * 100;
+        const angleY = (mouseY / badgeContainer.clientHeight - 0.5) * 100;
         badgeContainer.style.transform = `perspective(1000px) rotateX(${angleY}deg) rotateY(${angleX}deg)`;
     });
 
@@ -74,3 +75,25 @@ function addBadgeHoverEffect(badgeContainer) {
         badgeContainer.style.transform = 'none';
     });
 }
+// 获取模态框、关闭按钮和模态框内容
+const modal = document.getElementById('myModal');
+const closeButton = document.getElementsByClassName('close')[0];
+
+// 获取徽章元素
+const badgeElement = document.getElementById('official-badge-container');
+
+// 点击徽章时显示模态框
+badgeElement.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+// 点击关闭按钮或模态框外部时隐藏模态框
+closeButton.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});

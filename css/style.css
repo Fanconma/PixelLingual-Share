@@ -200,10 +200,96 @@ header {
 
 /* 悬停时显示描述文字 */
 .badge-container:hover .badge-description {
-	display: block;
+	display: inline;
  /* 悬停时显示描述文字 */
 }
 
 #vernum {
   color:white;
 }
+/* 手机 */
+@media screen and (max-width: 480px) {
+    /* 在小屏幕上设置图片的最大宽度 */
+    #cover {
+        max-width: 100%; /* 图片最大宽度为屏幕宽度 */
+        height: auto; /* 自适应高度，防止图片变形 */
+    }
+}
+
+@media screen and (max-width: 768px) {
+	#title {
+		text-align: center;
+	}
+}
+
+/* 模态框容器 */
+.modal {
+	display: none;
+	position: fixed;
+	top: 100;
+	left: 100;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+  }
+  
+  /* 模态框内容 */
+  .modal-content {
+	background-color: black;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	animation: zoomIn 0.3s; /* 缩放动画 */
+  }
+  
+  /* 关闭按钮 */
+  .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+  }
+  
+  /* 缩放动画 */
+  @keyframes zoomIn {
+	from {
+	  transform: scale(0);
+	}
+	to {
+	  transform: scale(1);
+	}
+  }
+
+/* HEADER */
+header {
+	width: 100%;
+	padding: 1em;
+	font-size: 140%;
+	left: 0;
+	transition: opacity .2s ease-in-out;
+	text-align: center;
+  }
+  header h1 {
+	font-weight: 600;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-size: inherit;
+  }
+  nav a {
+	display: inline-block;
+	outline: none;
+	text-decoration: none;
+	opacity: .7;
+	padding: 0 .5em;
+	color: white;
+	transition: opacity .2s ease-in-out;
+  }
+  nav a:hover,
+  nav a:focus {
+	opacity: 1;
+	color:rgb(112, 112, 112)
+  }
