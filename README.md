@@ -1,3 +1,14 @@
+> [!NOTE]
+>  THE "PIXELLINGUAL-SHARE" PROJECT HAS BEEN ABANDONED DUE TO THE LIMITATION OF THE ORIGINAL CODES. NOW THE PROJECT HAS BEEN MOVED TO "PIXELLINGUAL"(repo:pixellingual-site).
+> 
+> View [PixelLingual](https://pling.top) to learn more.
+> 
+> 由于原代码的限制，“PIXELLINGUAL-SHARE”项目已停止维护。现在，该项目已迁移至“PIXELLINGUAL”（repo:pixellingual-site）。访问 [PixelLingual](https://pling.top) 了解更多信息。
+
+> [!CAUTION]
+> The domain "pixellingual.com" has expired. Do **NOT** trust any information on this website as it is not provided by us.
+>
+> 域名“pixellingual.com”已过期。请勿相信此网站上的任何信息，因为这些信息并非由我们提供。
 # 👋欢迎来到这个项目
 # 😕这是什么？| WHY IS THAT?
 PixelLingual Share 是一个**共享Minecraft中文翻译的平台**(Experimental测试性)，你可以将你自己的汉化作品放在这里，让更多的人知道！当然，你也可以通过这个平台来寻找汉化作品！
